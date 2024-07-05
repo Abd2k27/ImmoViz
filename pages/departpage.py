@@ -6,7 +6,7 @@ from annotated_text import annotated_text, annotation
 def load_data():
     try:
         # Charger les données des régions avec un encodage spécifique
-        data = pd.read_excel('./Data/Département/infoDepart.xlsx')
+        data = pd.read_excel('./Data/Département/Depart.xlsx')
         return data
     except pd.errors.ParserError as e:
         st.error(f"Erreur lors du chargement des données : {e}")
