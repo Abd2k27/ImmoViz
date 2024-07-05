@@ -1,0 +1,10 @@
+streamlit
+requests
+folium
+streamlit-folium
+geopandas
+pandas
+openpyxl
+st-annotated-text
+matplotlib
+
