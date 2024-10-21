@@ -1,5 +1,8 @@
 # ImmoViz : Visualisation des Prix de l'Immobilier en France
 
+<img width="1658" alt="Screenshot 2024-10-21 at 20 43 23" src="https://github.com/user-attachments/assets/fd244bb2-6287-42b4-a4b6-68a07e5b2c80">
+<img width="1663" alt="Screenshot 2024-10-21 at 20 44 19" src="https://github.com/user-attachments/assets/43b330f6-897d-4923-bdfb-3260cc33b77d">
+
 Bienvenue dans **ImmoViz**, une application interactive pour visualiser les prix de l'immobilier en France. Cette application permet d'explorer les données relatives aux prix au m² et d'autres informations démographiques et socio-économiques à trois niveaux : les régions, les départements et les grandes villes.
 
 ## Fonctionnalités
