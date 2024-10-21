@@ -117,23 +117,23 @@ def show():
             )
     st.divider()
 
-    st.write(f"Évolution de la population à :blue[_{dep}_] 🗾")
+    # st.write(f"Évolution de la population à :blue[_{dep}_] 🗾")
 
-    # Convertir les colonnes en format numérique après avoir retiré les points des milliers
-    for col in graph_data.columns[1:]:
-        graph_data[col] = graph_data[col].str.replace('.', '').str.replace(',', '.').astype(float)
+    # # Convertir les colonnes en format numérique après avoir retiré les points des milliers
+    # for col in graph_data.columns[1:]:
+    #     graph_data[col] = graph_data[col].str.replace('.', '').str.replace(',', '.').astype(float)
 
-    # Transformer les données pour avoir les années comme une colonne distincte
-    data_melted = pd.melt(graph_data, id_vars=["Département"], var_name="Année", value_name="Population")
+    # # Transformer les données pour avoir les années comme une colonne distincte
+    # data_melted = pd.melt(graph_data, id_vars=["Département"], var_name="Année", value_name="Population")
 
-    # Convertir la colonne "Année" en entier (en supprimant les notes entre crochets)
-    data_melted["Année"] = data_melted["Année"].str.extract('(\d+)', expand=False).astype(int)
+    # # Convertir la colonne "Année" en entier (en supprimant les notes entre crochets)
+    # data_melted["Année"] = data_melted["Année"].str.extract('(\d+)', expand=False).astype(int)
 
-    # Filtrer les données pour le département sélectionné
-    department_data = data_melted[data_melted['Département'] == dep]
+    # # Filtrer les données pour le département sélectionné
+    # department_data = data_melted[data_melted['Département'] == dep]
 
-    # Créer le graphique avec Streamlit
-    st.bar_chart(department_data.set_index('Année')['Population'])
+    # # Créer le graphique avec Streamlit
+    # st.bar_chart(department_data.set_index('Année')['Population'])
 
 
 
