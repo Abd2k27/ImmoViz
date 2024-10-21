@@ -5,7 +5,7 @@ from my_pages import homepage, departpage, villepage
 st.set_page_config(layout="wide", initial_sidebar_state="collapsed")
 
 # Custom sidebar for navigation
-st.sidebar.title("DAT-ImmoViz")
+st.sidebar.title("ImmoViz")
 page = st.sidebar.radio("Go to", ["Homepage", "Departpage", "Villepage"])
 
 # Load the selected page
